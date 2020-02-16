@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Niconne&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/5f21fd80f5.js" crossorigin="anonymous"></script>    
+</head>
+<body>
+<!-- ----------------------------------------------------------------------- -->
+<!--                          navbar section Start                           -->
+<!-- ----------------------------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto align-items-center">
+          <li class="nav-item ">
+            <a class="nav-link activeBtn" href="#">HOME<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">ABOUT US<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#">SERVICE<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">OURTEAM</a>
+          </li>
+          <li class="nav-item logo">
+            <a class="navbar-brand" id="logo" href="#">PlanTs</a>
+            <i class="fab fa-pagelines"></i>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Language
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item active" id="English">English</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item"id="Arabic">Arabic</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">BLOG</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">CONTENT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- ----------------------------------------------------------------------- -->
+<!--                               navbar End                                -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                          carsoul section Start                          -->
+<!-- ----------------------------------------------------------------------- -->
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="20000">
+            <img src="./images/1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block align-items-center">
+              <h5 class="carousel-caption__hedader">Welcome To plants</h5>
+              <p class="carousel-caption__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga qui perferendis
+                debitis soluta et repellendus quasi autem.</p>
+              <button type="button" class="btn btn-Orange" data-toggle="modal" data-target="#exampleModal">
+                READ MORE
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-caption__hedader">Welcome To plants</h5>
+              <p class="carousel-caption__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga qui perferendis
+                debitis soluta et repellendus quasi autem.</p>
+              <button type="button" class="btn btn-Orange" data-toggle="modal" data-target="#exampleModal">
+                READ MORE
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-caption__hedader">Welcome To plants</h5>
+              <p class="carousel-caption__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga qui perferendis
+                debitis soluta et repellendus quasi autem.</p>
+              <button type="button" class="btn btn-Orange" data-toggle="modal" data-target="#exampleModal">
+                READ MORE
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/4.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="carousel-caption__hedader">Welcome To plants</h5>
+              <p class="carousel-caption__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga qui perferendis
+                debitis soluta et repellendus quasi autem.</p>
+              <button type="button" class="btn btn-Orange" data-toggle="modal" data-target="#exampleModal">
+                READ MORE
+              </button>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+<!-- -------------------------------- modal -------------------------------- -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        My Name is Ali Emam
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Carsoul Section End                           -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                           About Section Start                           -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="about container">
+  <div class="about-imgs row">
+    <div class="col-10 col-md-4">
+      <figure class="about-imgs__container">
+        <img class="border-img img-fluid" src="./images/ab.jpg">
+      </figure>
+      <figure class="about-imgs__container">
+        <img class="border-img img-fluid" src="./images/ab2.jpg">
+      </figure>
+    </div>
+    <div class="about-content col-12 col-md-6">
+      <h6 class="about-content__subheader">About Us</h6>
+      <h3 class="about-content__mainheader">DUIS AUTE IRURE OLOR IN CILLUM SOLORE</h3>
+      <p class="about-content__body">Lorem ipsum dolor sit amet Neque porro quisquam est qui dolorem Lorem int ipsum
+        dolor sit amet when an unknown printer took a galley of type.Vivamus id tempor felis.</p>
+      <div class="media about-content__media">
+        <img src="./images/te1.jpg" class="mr-3" alt="author">
+        <div class="media-body">
+          <h5 class="mt-0">Admin Name</h5>
+          <p>Comany Name</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------------------------- -->
+<!--                            About Section End                            -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                          Feature Section Start                          -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="features">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 features-box">
+        <div class="feature-box__icon">
+          <i class="fab fa-envira"></i>
+        </div>
+        <h4 class="feature-box__header">GARDEN CARE</h4>
+        <p class="feature-box__body">Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+      </div>
+      <div class="col-12 col-md-4 features-box">
+        <div class="feature-box__icon">
+          <i class="fas fa-tree"></i>
+        </div>
+        <h4 class="feature-box__header">PLANT RENOVATION</h4>
+        <p class="feature-box__body">Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+      </div>
+      <div class="col-12 col-md-4 features-box">
+        <div class="feature-box__icon">
+          <i class="fab fa-pagelines"></i>
+        </div>
+        <h4 class="feature-box__header">ALWAYS FRESH</h4>
+        <p class="feature-box__body">Ut enim ad minima veniam, quis nostrum ullam corporis suscipit laboriosam.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------------------------- -->
+<!--                           feature Section End                           -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Blog Section Start                            -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="blog">
+  <div class="container-fluid no-gutters">
+    <div class="row no-gutters">
+      <div class="col-10 col-md-5 blog-box">
+        <h3 class="blog-box__header"><span>Latest</span> Blog</h3>
+        <div class="blog-box__body">
+          <div class="blog-box__body-artical">
+            <div class="blog-box__body-artical--header">
+              <h4>Iste natus error sit</h4>
+              <p>21 Nov, 2018</p>
+            </div>
+            <div class="blog-box__body-artical--body">
+              Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris.
+            </div>
+          </div>
+          <div class="blog-box__body-artical">
+            <div class="blog-box__body-artical--header">
+              <h4>Iste natus error sit</h4>
+              <p>21 Nov, 2018</p>
+            </div>
+            <div class="blog-box__body-artical--body">
+              Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris.
+            </div>
+          </div>
+          <div class="blog-box__body-artical">
+            <div class="blog-box__body-artical--header">
+              <h4>Iste natus error sit</h4>
+              <p>21 Nov, 2018</p>
+            </div>
+            <div class="blog-box__body-artical--body">
+              Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 blog-img">
+        <figure>
+          <img class="img-fluid" src="./images/blog.jpg">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------------------------- -->
+<!--                            blog section end                             -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                         Choose us Section Start                         -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="chooseus container">
+  <h3 class="chooseus-header">
+    <span>Why </span>Choose Us
+  </h3>
+  <div class="row">
+    <div class="col-12 col-md-4 mb-5">
+      <div class="card">
+        <img src="./images/wh1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Quality Products</h5>
+          <p class="card-text">MAGNA KICTUM - LOREMIPSUM</p>
+          <p class="card-content">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4  mb-5">
+      <div class="card">
+        <img src="./images/wh2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Work Smart</h5>
+          <p class="card-text">MAGNA KICTUM - LOREMIPSUM</p>
+          <p class="card-content">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-md-4  mb-5">
+      <div class="card">
+        <img src="./images/wh3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Excellent Services</h5>
+          <p class="card-text">MAGNA KICTUM - LOREMIPSUM</p>
+          <p class="card-content">Cras ultricies ligula sed magna dictum porta auris blandita.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------------------------- -->
+<!--                             our stats start                             -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="stats">
+  <h3 class="header-stats">We give you Care tips and Ideas on what style suits your garden</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3 stats-box">
+        <div class="stats-box__icon"><i class="far fa-smile"></i></div>
+        <div class="stats-box__content">
+          <h4>1280</h4>
+          <p>Happy Customer</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 stats-box">
+        <div class="stats-box__icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="stats-box__content">
+          <h4>920</h4>
+          <p>Awards Win</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 stats-box">
+        <div class="stats-box__icon"> <i class="fab fa-envira"></i></div>
+        <div class="stats-box__content">
+          <h4>1400</h4>
+          <p>Products</p>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 stats-box">
+        <div class="stats-box__icon"><i class="far fa-thumbs-up"></i></div>
+        <div class="stats-box__content">
+          <h4>1080</h4>
+          <p>Ratings</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------------------------- -->
+<!--                              our stats end                              -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                             Our Team Start                              -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="team">
+  <h3 class="team-header"><span>Our </span>Team</h3>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-3 team-box">
+        <div class="card">
+          <img src="./images/t1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mack Joe</h5>
+            <div class="card-media">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-google-plus-square"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 team-box">
+        <div class="card">
+          <img src="./images/t2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cruz Deo</h5>
+            <div class="card-media">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-google-plus-square"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 team-box">
+        <div class="card" >
+          <img src="./images/t3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rochy Jae
+            </h5>
+            <div class="card-media">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-google-plus-square"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-3 team-box">
+        <div class="card">
+          <img src="./images/t4.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rojo Poy</h5>
+            <div class="card-media">
+              <i class="fab fa-facebook-square"></i>
+              <i class="fab fa-twitter-square"></i>
+              <i class="fab fa-google-plus-square"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------------------------- -->
+<!--                          Our team Section end                           -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Qouts section Start                           -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="qouts">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <p class="qouts-text"><i class="fas fa-quote-left"></i>Lorem ipsum dolor sit amet consectetur adipisicing elit sedc dnmo eiusmod. sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi</p>
+      </div>
+      <h4 class="qouts-header col-12">Mary Jane</h4>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------------------------- -->
+<!--                            Qouts Section End                            -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                            Our Plants Start                             -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="plants container">
+  <h3 class="plants-header"><span>Our</span> Plants</h3>
+  <div class="row mr-0">
+    <div class="col-12 col-md-3 col-m plant-box">
+      <img class="img-fluid" src="./images/g1.jpg">
+    </div>
+    <div class="col-12 col-md-3 plant-box">
+      <img class="img-fluid" src="./images/g2.jpg">
+    </div>
+    <div class="col-12 col-md-3 plant-box">
+      <img class="img-fluid" src="./images/g3.jpg">
+    </div>
+    <div class="col-12 col-md-3 plant-box">
+      <img class="img-fluid" src="./images/g4.jpg">
+    </div>
+    <div class="col-12 col-md-3 plant-box">
+      <img class="img-fluid" src="./images/g5.jpg">
+    </div>
+    <div class="col-12 col-md-3 plant-box">
+      <img class="img-fluid" src="./images/g6.jpg">
+    </div>
+    <div class="col-12 col-md-3 plant-box">
+      <img class="img-fluid" src="./images/g7.jpg">
+    </div>
+    <div class="col-12 col-md-3 plant-box">
+      <img class="img-fluid" src="./images/g8.jpg">
+    </div>
+  </div>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                        Contact Us Section Start                         -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="contact sec-padding text-center">
+  <div class="container">
+    <div class="contact-headers headers pb-5">
+      <h2><span>contact</span> us</h2>
+    </div>
+    <div class="row">
+      <div class="col-lg-8 m-auto text-center">
+        <fieldset class="contact-form">
+          <legend>
+            <h4>Send Us A Note</h4>
+          </legend>
+          <form>
+            <div class="form-group">
+              <label>name</label>
+              <input type="text" placeholder="enter your name" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>email</label>
+              <input type="email" placeholder="enter your email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label>your message</label>
+              <textarea class="form-control" rows="8">your message</textarea>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-block ">send</button>
+            </div>
+          </form>
+        </fieldset>
+      </div>
+      <div class="col-lg-10 m-auto">
+        <div class="contact-info mt-4 ">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="contact-info-details">
+                <div class="row">
+                  <div class="col-2">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="col-10">
+                    <span>mail1@example.com</span>
+                    <span>mail2@example.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-info-details">
+                <div class="row">
+                  <div class="col-2">
+                    <i class="fas fa-phone-volume"></i>
+                  </div>
+                  <div class="col-10">
+                    <span class="d-block">(+10) 1335445558</span>
+                    <span>(+10) 133548948</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="contact-info-details">
+                <div class="row">
+                  <div class="col-2">
+                    <i class="fas fa-map"></i>
+                  </div>
+                  <div class="col-10">
+                    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ----------------------------------------------------------------------- -->
+<!--                         contact Us Section End                          -->
+<!-- ----------------------------------------------------------------------- -->
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                         Partners Section Start                          -->
+<!-- ----------------------------------------------------------------------- -->
+<section class="partners container">
+  <h3 class="partners-header"><span>Our</span> Partners</h3>
+  <div class="row mr-0">
+    <div class="col-11 col-md-2"><i class="fab fa-angellist"></i></div>
+    <div class="col-11 col-md-2"><i class="fab fa-opencart"></i></div>
+    <div class="col-11 col-md-2"><i class="fab fa-lastfm"></i></div>
+    <div class="col-11 col-md-2"><i class="fab fa-openid"></i></div>
+    <div class="col-11 col-md-2"><i class="fab fa-skyatlas"></i></div>
+    <div class="col-11 col-md-2"><i class="fab fa-ravelry"></i></div>
+  </div>
+</section>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           partner Section End                           -->
+<!-- ----------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------- -->
+<!--                          footer Section Start                           -->
+<!-- ----------------------------------------------------------------------- -->
+<footer class="footer">
+  <h3 class="footer-header">We Provide Best Services</h3>
+  <p class="footer-text">Natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam doloremque laudantium, totam rem aperiam</p>
+  <div class="logo">
+    <a class="navbar-brand" id="logo" href="#">PlanTs</a>
+    <i class="fab fa-pagelines"></i>
+  </div>
+  <p class="footer-text">Sed do eiusmod tempor incididunt ut labore et dolore</p>
+  <div class="footer-connect">
+    <div class="place"><i class="fas fa-map-marker-alt"></i>345 Setwant natrer, USA</div>
+    <div class="phone"><i class="fas fa-phone-alt"></i>+1(401) 1234 567.</div>
+    <div class="email"><i class="fas fa-envelope"></i> example@gmail.com</div>
+
+  </div>
+  <div class="footer-media">
+    <div class="facebook"><i class="fab fa-facebook-f"></i></div>
+    <div class="twitter"><i class="fab fa-twitter"></i></div>
+    <div class="rss"><i class="fas fa-rss"></i></div>
+    <div class="vk"><i class="fab fa-vk"></i></div>
+  </div>
+</footer>
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                           Footer Section End                            -->
+<!-- ----------------------------------------------------------------------- -->
+<a id="top" href="#carouselExampleControls"><i class="fas fa-arrow-up"></i></a>
+  <script src="./js/jquery-3.4.1.min.js"></script>
+  <script src="./js/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
